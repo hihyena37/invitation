@@ -3,7 +3,7 @@ import { WEDDING_DATA } from '../data/weddingData';
 import { ShareIcon, CopyIcon, CloverIcon } from './common/Icons';
 import FadeIn from './common/FadeIn';
 
-const SHARE_URL = 'https://hihyena37.github.io/invitation/?v=20260824-2';
+const SHARE_URL = 'https://hihyena37.github.io/invitation/?v=20260824-3';
 
 /**
  * 공유하기 및 푸터 섹션
