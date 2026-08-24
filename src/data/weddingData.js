@@ -79,7 +79,7 @@ export const WEDDING_DATA = {
       }
     },
     account: {
-      bank: '농협',
+      bank: '농협은행',
       number: '352-0171-8417-53',
       holder: '성혜나'
     }
