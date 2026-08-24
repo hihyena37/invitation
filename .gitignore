@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.DS_Store
+
+# 웹에서는 public/gallery의 최적화 이미지만 사용한다.
+public/*.jpg
