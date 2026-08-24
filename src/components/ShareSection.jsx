@@ -3,6 +3,8 @@ import { WEDDING_DATA } from '../data/weddingData';
 import { ShareIcon, CopyIcon, CloverIcon } from './common/Icons';
 import FadeIn from './common/FadeIn';
 
+const SHARE_URL = 'https://hihyena37.github.io/invitation/?v=20260824-2';
+
 /**
  * 공유하기 및 푸터 섹션
  * 카카오톡 공유 / 링크 복사 / 화환 안내 및 저작권 표시
@@ -10,7 +12,7 @@ import FadeIn from './common/FadeIn';
 export default function ShareSection({ onToast }) {
   // 청첩장 링크 복사
   const handleCopyLink = () => {
-    navigator.clipboard.writeText(window.location.href);
+    navigator.clipboard.writeText(SHARE_URL);
     if (onToast) {
       onToast('청첩장 링크가 복사되었습니다.');
     }
@@ -22,8 +24,8 @@ export default function ShareSection({ onToast }) {
       try {
         await navigator.share({
           title: '박경돈 ♡ 성혜나 결혼식에 초대합니다',
-          text: '2026년 12월 12일 토요일 오후 12시, 구미 라뷰웨딩컨벤션',
-          url: window.location.href,
+          text: '2026년 12월 12일 토요일 오후 12시, 라뷰웨딩컨벤션',
+          url: SHARE_URL,
         });
       } catch {
         // 사용자가 취소한 경우 무시
