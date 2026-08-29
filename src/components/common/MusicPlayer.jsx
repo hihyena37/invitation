@@ -45,8 +45,8 @@ export default function MusicPlayer() {
   return (
     <>
       <audio ref={audioRef} loop preload="auto">
-        <source src="/audio/bgm.opus" type="audio/ogg; codecs=opus" />
-        <source src="/audio/bgm.mp3" type="audio/mpeg" />
+        <source src={`${import.meta.env.BASE_URL}audio/bgm.opus`} type="audio/ogg; codecs=opus" />
+        <source src={`${import.meta.env.BASE_URL}audio/bgm.mp3`} type="audio/mpeg" />
       </audio>
 
       <button
