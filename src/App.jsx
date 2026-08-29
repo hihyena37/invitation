@@ -9,6 +9,7 @@ import AccountSection from './components/AccountSection';
 import ShareSection from './components/ShareSection';
 import Toast from './components/common/Toast';
 import FloatingClovers from './components/common/FloatingClovers';
+import MusicPlayer from './components/common/MusicPlayer';
 
 /**
  * 모바일 청첩장 메인 애플리케이션 루트 컴포넌트
@@ -33,6 +34,7 @@ export default function App() {
       {/* 480px 모바일 전용 컨테이너 */}
       <main className="w-full max-w-[480px] min-h-screen bg-brand-ivory shadow-2xl overflow-x-hidden relative flex flex-col font-pretendard selection:bg-brand-sand-border/50">
         <FloatingClovers />
+        <MusicPlayer />
 
         {/* 01. 인트로 섹션 (D-Day 타이머 및 메인 스냅) */}
         <HeroSection />
